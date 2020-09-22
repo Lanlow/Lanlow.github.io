@@ -1,0 +1,167 @@
+.dreamshare_info{
+    @include flex-row(row, space-between, start);
+    border-top: 2px solid #FF4E50;
+    padding: 38px 250px 36px 249px;
+    margin-top: 100px;
+    .dreamshare_logo{
+        width: 119px;
+        height: 20px;
+        h2{
+            font-family: $fontStyle;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 20px;
+            color: #FF4E50;
+        }
+    }
+    .dreamshare_company{
+        width: 135px;
+        height: 190px;
+        @include flex-row(column, start, start);
+        a{
+            width: 70px;
+            height: 17px;
+            font-family: $fontStyle;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 17px;
+            color: #444444;
+            text-decoration-line: none;
+            &:hover{
+                transform: scale(1.3);
+                transition: all .2s;
+            }
+            &:not(:hover){
+                transition: all .2s;
+
+            }
+        }
+        .dreamshare_company_container{
+            width: 135px;
+            height: 170px;
+            margin-top: 11px;
+
+            a{
+                font-family: $fontStyle;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 26px;
+                color: #999999;
+                text-decoration-line: none;
+   
+            }
+            li{
+                &:hover{
+                    transform: scale(1.06);
+                    transition: all .2s;
+                }
+                &:not(:hover){
+                    transition: all .2s;
+                }
+                    
+            }
+            
+            
+            
+        }
+    }
+    .dreamshare_partners{
+        width: 64px;
+        height: 17px;
+        &:hover{
+            transform: scale(1.3);
+            transition: all .2s;
+        }
+        &:not(:hover){
+            transition: all .2s;
+
+        }
+        a{
+            font-family: $fontStyle;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 17px;
+            color: #444444;
+            text-decoration-line: none;
+            
+        }
+    }
+    .dreamshare_areto{
+        width: 113px;
+        height: 43px;
+        @include flex-row(column, flex-end, flex-end);
+            h2{
+                font-family: $fontStyle;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 10px;
+                line-height: 12px;
+                letter-spacing: 1px;
+                color: #CCCCCC;
+                
+
+            }
+           
+    
+        .dreamshare_areto_logo{
+            width: 110px;
+            height: 24px;
+            background-image: url(../images/Areto_logo.png);
+            margin-top: 7px;
+        }
+    }
+}
+
+@media all and (max-width: 768px){
+    footer{
+        width: 768px;
+        .dreamshare_info{
+            padding: 38px 37px 20px 39px;
+
+        }
+
+
+    }
+}
+
+@media all and (max-width: 320px){
+    footer{
+        width: 320px;
+        .dreamshare_info{
+            width: 320px;
+            height: 100%;
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 40px;
+            padding: 19px 0 22px 0;
+            @include flex-center(center, center);
+        
+
+        }
+        .dreamshare_company{
+            padding: 13px 0 14px 0;
+           
+        }
+        .dreamshare_partners{
+            padding-bottom: 14px;
+        }
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+    }
+}
